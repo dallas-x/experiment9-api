@@ -7,7 +7,7 @@
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 <br />
-[![Code Grade](https://www.code-inspector.com/project/19696/score/svg)](https://frontend.code-inspector.com/public/project/19696/kd13_quarantine_pok3r/dashboard)
+[![Code Grade](https://www.code-inspector.com/project/20822/score/svg)](https://frontend.code-inspector.com/public/project/20822/experiment9-api/dashboard)
 [![Open Source Love](https://firstcontributions.github.io/open-source-badges/badges/open-source-v1/open-source.svg)](https://github.com/firstcontributions/open-source-badges) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/k1ddarkn3ss/graphs/commit-activity) [![Website poker.kd13.dev](https://img.shields.io/website-up-down-green-red/http/poker.k1ddarkn3ss.dev.svg)](http://poker.k1ddarkn3ss.dev/) [![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.png?v=103)](https://github.com/k1ddarkn3ss/kd13_quarantine_pok3r/blob/master/LICENSE)
 [![Gitter](https://badges.gitter.im/gitterHQ/gitter.svg)](https://gitter.im/shadow-dimension/community)
 
