@@ -13,52 +13,31 @@
 
 </div>
 
-![Process Poker Stats](https://github.com/k1ddarkn3ss/gifs/blob/main/2021-03-01%2023.39.51.gif)
-
-## App Screenshots
-
-|                                                            Home Page                                                            |                                                           Player Stats Table                                                            |                                                         Authentication                                                          |
-| :-----------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------: |
-| <img src="https://github.com/k1ddarkn3ss/gifs/blob/main/CleanShot%202021-03-01%20at%2023.46.18.png" title="Home " width="100%"> | <img src="https://github.com/k1ddarkn3ss/gifs/blob/main/CleanShot%202021-03-01%20at%2023.46.32.png" title="Process Files" width="100%"> | <img src="https://github.com/k1ddarkn3ss/gifs/blob/main/CleanShot%202021-03-02%20at%2001.38.18.png" title="Login" width="100%"> |
-
 ## Folder Structure
 
     .
     ├── doc                   # Future Documentation
-    ├── dist                  # Build Folder
-    ├── api                   # NodeJS MongoDB and ExpressJS/Graphql server folder
-    ├── src                   # React App - UI Front end logic
-    ├── .prettierrc           # Style Logic Please Follow
-    ├── .eslintrc             # Code Rules Please Follow
-    ├── .babelrc              # Compile Rules
+    ├── src                   # source Folder
+    ├── bin                   # web server
+    ├── server.js             # main file
+    ├── test.server.js        # main test file
     ├── package.json          # Project Dependencies
-    └── .proxyrc              # Proxy configuration if running server and UI on same instance
 
 ## Developing
-
-### Platforms
-
-| Platform      | Status     |
-| ------------- | ---------- |
-| Web           | Developing |
-| Native Mobile | Pending    |
-| Mac OSX       | Pending    |
-| Windows       | Pending    |
-| Linux         | Pending    |
 
 #### Built With
 
 - [Node JS](https://nodejs.org/en/)
-- [GraphQL](http://graphql.org)
+- [GraphQL (future)](http://graphql.org)
 - [Express JS](https://expressjs.com/)
-- [Socket IO](https://socket.io/)
-- [React](https://reactjs.org/)
+- [Socket IO (future)](https://socket.io/)
+- [MongoDB](https://www.mongodb.com)
 
 #### Clone Project
 
 ```shell
 cd ./someProjectFolder
-git clone https://github.com/k1ddarkn3ss/kd13_quarantine_pok3r.git poker_app
+git clone https://github.com/k1ddarkn3ss/experiment9-api.git poker_api
 ```
 
 <!-- ![git clone https://github.com/supunlakmal/thismypc.git](https://raw.githubusercontent.com/supunlakmal/thismypc/master/doc/gifAnimations/gitClone.gif) -->
@@ -70,25 +49,17 @@ This Command will copy a full project to your local environment
 ### Setting up Project
 
 ```shell
-    cd poker_app
+    cd poker_api
     yarn install
 ```
 
-<!-- ![Setting up Angular Project](https://raw.githubusercontent.com/supunlakmal/thismypc/master/doc/gifAnimations/angularSetup.gif) -->
+<!-- ![Setting up Project](https://raw.githubusercontent.com/supunlakmal/thismypc/master/doc/gifAnimations/angularSetup.gif) -->
 
 ### Run Express Server
 
 Run `yarn run serve` for a dev server. Navigate to `http://localhost:3000/`. The app will automatically reload if you change any of the source files.
 
 ![ Run Server](https://github.com/k1ddarkn3ss/gifs/blob/main/2021-03-01%2023.48.10.gif)
-
-### Run React App
-
-Run `yarn run dev` for a dev app. Navigate to `http://localhost:1234/`. The app will automatically reload if you change any of the source files.
-
-Run `yarn run build-app` for a production app. Navigate to `http://localhost:${env.PORT}/`. The app will not automatically reload if you change any of the source files.
-
-![ Run React](https://github.com/k1ddarkn3ss/gifs/blob/main/2021-03-01%2023.47.45.gif)
 
 ### Web API
 
