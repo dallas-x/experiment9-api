@@ -1,0 +1,8 @@
+{
+  "id": "PlayerID",
+  "name": "Player",
+  "score": "Score",
+  "rank": "Rank",
+  "xPlayed": "Games_Played",
+  "tpp": "TPP"
+}

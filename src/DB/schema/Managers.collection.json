@@ -1,0 +1,5 @@
+{
+  "name": "OKTA_USERNAME",
+  "Email": "OKTA_EMAIL",
+  "manager_level": ["OWNER", "ADMIN", "MODERATOR"]
+}

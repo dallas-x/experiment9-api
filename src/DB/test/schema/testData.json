@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Neapolitan pizza",
+    "shape": "round",
+    "toppings": ["San Marzano tomatoes", "mozzarella di bufala cheese", "white sauce"]
+  },
+  {
+    "name": "Roundtable pizza",
+    "shape": "square",
+    "toppings": ["cheese", "peperonie", "red sauce"]
+  },
+  {
+    "name": "Mikes pizza",
+    "shape": "triangle",
+    "toppings": ["cheese", "chicken", "purple sauce"]
+  }
+]

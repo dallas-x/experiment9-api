@@ -1,0 +1,6 @@
+{
+  "date": "TIME_LAST_GAME_PLAYED",
+  "winner": "PlayerID",
+  "xGames": "TOTAL_NUMBER_OF_GAMES",
+  "tier": ["BASIC", "HIGH_ROLLER", "VIP"]
+}
