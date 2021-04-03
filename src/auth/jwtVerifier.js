@@ -1,7 +1,10 @@
+import dotenv from 'dotenv';
+
+dotenv.config();
 const OktaJwtVerifier = require('@okta/jwt-verifier');
 
 const oktaJwtVerifier = new OktaJwtVerifier({
-  issuer: 'https://dev-1007272.okta.com/oauth2/default', // required
+  issuer: `https://${process.env.OKTA_DOMAIN}.okta.com/oauth2/default`, // required
 });
 
 const authenticationRequired = (req, res, next) => {

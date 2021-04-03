@@ -1,12 +1,8 @@
-import dotenv from 'dotenv';
 import express from 'express';
 import cors from 'cors';
 import uploadRouter from './src/routes/uploadRoute';
 import statsRouter from './src/routes/statsRoute';
-const debug = require('debug')('app');
 
-dotenv.config();
-const port = process.env.PORT || 3000;
 const app = express();
 
 app.use(cors());
