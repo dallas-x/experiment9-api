@@ -113,6 +113,6 @@ This project is licensed under the GPL License - see the [LICENSE.md](LICENSE.md
 
 <div align="center">
 
-[![forthebadge](https://forthebadge.com/images/badges/powered-by-energy-drinks.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](https://forthebadge.com)
 
 </div>
