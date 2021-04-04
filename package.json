@@ -12,6 +12,7 @@
     "lint-app": "elint \"src/**/*.{js}\" --quiet"
   },
   "devDependencies": {
+    "@babel/cli": "^7.13.14",
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",
     "@babel/node": "^7.13.0",
