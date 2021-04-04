@@ -8,8 +8,7 @@ const oktaJwtVerifier = new OktaJwtVerifier({
 });
 
 const authenticationRequired = (req, res, next) => {
-  console.log(req.headers);
-  const accessToken = req.headers.authorization || '';
+  const accessToken = req.headers('x-sheldyn-authorization') || '';
   const expectedAudience = 'api://default';
 
   if (!accessToken) {
