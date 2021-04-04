@@ -10,16 +10,16 @@ uploadRouter
     res.send('success');
   })
   .post(authenticationRequired, (req, res) => {
-    let Players = req.body;
-    let TPP = Players.length;
-    let results = Players.map(({ data }) => {
-      let rScore = TPP - data.Rank;
+    const Players = req.body;
+    const TPP = Players.length;
+    const results = Players.map(({ data }) => {
+      const rScore = TPP - data.Rank;
       return {
         Player_ID: data.ID,
         Player: data.Player,
         Score: rScore,
         Rank: data.Rank,
-        TPP: TPP,
+        TPP,
       };
     });
     updatePlayers(results, TPP)
