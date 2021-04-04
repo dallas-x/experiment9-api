@@ -1,6 +1,8 @@
 import dotenv from 'dotenv';
+
 dotenv.config();
 const { MongoClient } = require('mongodb');
+
 const PASSWORD = process.env.MONGO_TEST_PASSWORD;
 const USERNAME = process.env.MONGO_TEST_USERNAME;
 const dbName = 'kd13-testing';

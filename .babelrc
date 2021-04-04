@@ -1,9 +1,5 @@
 {
-    "presets": ["@babel/preset-react", ["@babel/preset-env", {
-      "targets": {
-        "browsers": ["last 2 Chrome versions"]
-      }
-    }]],
+    "presets": ["@babel/preset-env"],
     "plugins": ["@babel/plugin-syntax-class-properties"],
     "ignore": ["./node_modules"]
   }
