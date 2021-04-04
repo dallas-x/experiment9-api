@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 var chalk = require('chalk');
-var app = require('../server.js');
+var app = require('../src/server.js');
 var http = require('http');
 
 /**
