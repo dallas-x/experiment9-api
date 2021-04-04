@@ -6,9 +6,9 @@
   "author": "k1ddarkn3ss",
   "license": "AGPL",
   "scripts": {
-    "start": "babel-node bin/www",
-    "dev": "nodemon --exec DEBUG=app:* babel-node bin/www",
-    "serve": "babel-node bin/www",
+    "start": "node build/server.js",
+    "dev": "nodemon --exec DEBUG=app:* babel-node src/server.js",
+    "build": "babel -d ./build ./src",
     "lint-app": "elint \"src/**/*.{js}\" --quiet"
   },
   "devDependencies": {
