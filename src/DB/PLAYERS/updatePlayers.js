@@ -25,17 +25,16 @@ const updatePlayers = async (Players, TPP) => {
                   Player_ID: player.Player_ID,
                   Player: player.Player,
                 },
-                $inc: { Score: player.Score, Games_Played: 1, TPP },
-                $set: { Rank: player.Rank },
+                $set: { Active: true },
+                $inc: { Score: player.Score, Games_Played: 1 },
               },
-              { upsert: true, multi: true },
+              { upsert: true },
             )
             .then((result) => result);
         });
         resolve(results);
       });
     } catch (error) {
-      console.error(error);
       reject(error);
     } finally {
       client.close();

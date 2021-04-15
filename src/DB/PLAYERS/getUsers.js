@@ -7,7 +7,7 @@ const PASSWORD = process.env.MONGO_TEST_PASSWORD;
 const USERNAME = process.env.MONGO_TEST_USERNAME;
 const dbName = 'kd13-testing';
 
-const getPlayers = () => {
+const getUsers = () => {
   const uri = `mongodb+srv://${USERNAME}:${PASSWORD}@main.llmcq.mongodb.net/kd13-testing?retryWrites=true&w=majority`;
   return new Promise((resolve, reject) => {
     const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -15,8 +15,8 @@ const getPlayers = () => {
       client.connect().then((con) => {
         const db = con.db(dbName);
         db.collection('Players')
-          .find({ Active: true })
-          .sort({ Score: -1 })
+          .find()
+          .sort({ Player: 1 })
           .toArray((err, players) =>
             resolve({ status: 200, reason: 'The database liked you!', data: players }),
           );
@@ -29,4 +29,4 @@ const getPlayers = () => {
   });
 };
 
-export default getPlayers;
+export default getUsers;

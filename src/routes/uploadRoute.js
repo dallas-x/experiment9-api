@@ -1,5 +1,6 @@
 import express from 'express';
 import updatePlayers from '../DB/PLAYERS/updatePlayers';
+import updateBobTPP from '../DB/PLAYERS/updateBobTPP';
 import authenticationRequired from '../auth/jwtVerifier';
 
 const uploadRouter = express.Router();
@@ -9,7 +10,7 @@ uploadRouter
   .get((req, res) => {
     res.send('success');
   })
-  .post(authenticationRequired, (req, res) => {
+  .post(authenticationRequired, async (req, res) => {
     const Players = req.body;
     const TPP = Players.length;
     const results = Players.map(({ data }) => {
@@ -18,16 +19,16 @@ uploadRouter
         Player_ID: data.ID,
         Player: data.Player,
         Score: rScore,
-        Rank: data.Rank,
-        TPP,
       };
     });
-    updatePlayers(results, TPP)
+    const trueTPP = await updateBobTPP(TPP);
+    console.log(trueTPP.value.TPP);
+    updatePlayers(results, trueTPP.value.TPP)
       .then((response) => {
-        res.sendStatus(200);
+        res.status(200).json(response);
       })
-      .catch((upsert_err) => {
-        res.sendStatus(500);
+      .catch((upsertErr) => {
+        res.statusCode(500).json(upsertErr);
       });
   });
 

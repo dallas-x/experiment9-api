@@ -8,6 +8,7 @@ const statsRouter = express.Router();
 statsRouter.route('/players/get').get(authenticationRequired, (req, res) => {
   getPlayers()
     .then((response) => {
+      console.log(response.data);
       response.status === 200
         ? res.json(response.data)
         : res.json({ Players: [{ Player_ID: 0, Player: 'No Player Found', Score: 0 }] });

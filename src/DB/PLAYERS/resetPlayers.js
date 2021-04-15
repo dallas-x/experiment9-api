@@ -12,16 +12,16 @@ const resetPlayers = async () => {
   return new Promise((resolve, reject) => {
     const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
     try {
-      client.connect().then((client) => {
-        const db = client.db(dbName);
+      client.connect().then((con) => {
+        const db = con.db(dbName);
         db.collection('Players').updateMany(
           {},
-          { $set: { Score: 0, Rank: 0, TPP: 0 } },
+          { $set: { Score: 0, TPP: 0, Active: false } },
           (err, results) => resolve(results),
         );
       });
     } catch {
-      reject({ status: 500, reason: 'Database hates you!' });
+      reject(new Error({ reason: 'Database hates you!' }));
     } finally {
       client.close();
     }

@@ -2,6 +2,8 @@ import express from 'express';
 import cors from 'cors';
 import uploadRouter from './routes/uploadRoute';
 import statsRouter from './routes/statsRoute';
+import usersRouter from './routes/usersRoute';
+import seasonsRouter from './routes/seasonsRoute';
 
 const port = process.env.PORT || 3000;
 
@@ -13,6 +15,8 @@ app.use(express.json());
 
 app.use(uploadRouter);
 app.use(statsRouter);
+app.use(usersRouter);
+app.use(seasonsRouter);
 
 app.get('/', (req, res) => {
   res.json({ status: 200, message: 'hello' });
